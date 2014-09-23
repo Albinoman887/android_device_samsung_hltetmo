@@ -16,6 +16,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# NFC
+TARGET_NFC_TECH := nxp
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/hltetmo/hltetmo-vendor.mk)
 

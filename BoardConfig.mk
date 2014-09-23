@@ -15,7 +15,7 @@
 # inherit from common hlte
 -include device/samsung/hlte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := hltexx,SM-N9005,hltetmo,SM-N900T,hlteatt,SM-N900A,hlte
+TARGET_OTA_ASSERT_DEVICE := hltetmo,SM-N900T
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hlte_tmo_defconfig
@@ -26,7 +26,7 @@ TARGET_NFC_TECH := nxp
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/hltetmo/init/init_hlte.c
-TARGET_UNIFIED_DEVICE := true
+TARGET_UNIFIED_DEVICE := false
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 11534336
@@ -40,4 +40,4 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_RIL_CLASS := ../../../device/samsung/hltetmo/ril
 
 # inherit from the proprietary version
--include vendor/samsung/hlte/BoardConfigVendor.mk
+-include vendor/samsung/hltetmo/BoardConfigVendor.mk

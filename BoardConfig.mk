@@ -20,6 +20,9 @@ TARGET_OTA_ASSERT_DEVICE := hltetmo,SM-N900T
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hlte_tmo_defconfig
 
+# NFC
+BOARD_NFC_CHIPSET := pn547
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/hltetmo/init/init_hlte.c
